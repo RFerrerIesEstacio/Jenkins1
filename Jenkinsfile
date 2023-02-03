@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    tools { nodejs "node", jdk "jdk" }
+    tools { nodejs "node"}
     stages {
         stage('linter'){
             steps {
