@@ -3,17 +3,17 @@ pipeline{
     stages {
         stage('linter'){
             steps {
-                sh 'npm run lint'
+                cmd 'npm run lint'
             }
         }
         stage('test'){
             steps {
-                sh 'npm run test'
+                cmd 'npm run test'
             }
         }
         stage('deploy'){
             steps {
-                sh 'npm start'
+                cmd 'npm start'
             }
         }
 
